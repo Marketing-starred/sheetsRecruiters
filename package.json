@@ -1,0 +1,27 @@
+{
+  "name": "recruiters-sheets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2",
+    "sass-node": "^4.11.2",
+    "spdy": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marketing-starred/sheetsRecruiters.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marketing-starred/sheetsRecruiters/issues"
+  },
+  "homepage": "https://github.com/Marketing-starred/sheetsRecruiters#readme"
+}

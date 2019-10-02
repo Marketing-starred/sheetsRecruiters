@@ -16,11 +16,13 @@ const optionsHttps = {
     }
 }
 
+
+
 const app = express(); 
 
-const PORT_http = 80;
-const PORT_https = 443;
-const server_http = http.createServer( app );
+const PORT_http = 80; /* 80 */
+const PORT_https = 443; /* 443 */
+const server_http = http.createServer(app);
 const server_https = spdy.createServer(optionsHttps,app);
 
 //Redirections
