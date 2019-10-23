@@ -703,6 +703,10 @@ p{
     .mob-display{
         display: none;
     }
+    header {
+        justify-content: center !important;
+        margin-left: 0px !important;
+    }
 
     /* Others */
     .input{
@@ -721,6 +725,9 @@ p{
         margin-top:80px;
         position:relative !important;
         padding:60px 0px;;
+    }
+    .characters-div{
+        margin-left:0px !important;
     }
     .row-footer{
         width:100%;
@@ -750,18 +757,74 @@ p{
     .characters-intro div img {
         width: 107px !important;
         position: absolute;
+    }
+    .home-bull{
+        margin-left: -22px;
         margin-top: 37px;
     }
     .home-red{
         margin-left: -100px;
-        margin-top: 86px !important;
+        margin-top: 86px;
     }
     .home-kurt{
-        margin-top: 129px !important;
+        margin-top: 129px;
     }
     .home-nino{
         margin-left: -100px;
-        margin-top: 92px !important;
+        margin-top: 92px;
+    }
+}
+
+@media(max-width:500px){
+
+    .characters-div a:nth-of-type(1) div img, .characters-div a:nth-of-type(3) div img{
+        width:85px !important;
+    }
+
+    .characters-div a:nth-of-type(2) div img, .characters-div a:nth-of-type(4) div img{
+        width: 75px!important;
+    }
+
+    .characters-intro div img {
+        width: 107px !important;
+        position: absolute;
+    }
+    .home-bull{
+        margin-left: -22px;
+        margin-top: 50px;
+    }
+    .home-red{
+        margin-left: -100px;
+        margin-top: 106px;
+    }
+    .home-kurt{
+        margin-top: 150px;
+    }
+    .home-nino{
+        margin-left: -100px;
+        margin-top: 112px;
+    }
+}
+
+@media(max-width:400px){
+    .characters-intro div img {
+        width: 107px !important;
+        position: absolute;
+    }
+    .home-bull{
+        margin-left: -22px;
+        margin-top: 90px;
+    }
+    .home-red{
+        margin-left: -100px;
+        margin-top: 146px !important;
+    }
+    .home-kurt{
+        margin-top: 190px !important;
+    }
+    .home-nino{
+        margin-left: -100px;
+        margin-top: 152px !important;
     }
 }
 
