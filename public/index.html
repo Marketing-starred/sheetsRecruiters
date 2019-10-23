@@ -18,25 +18,31 @@
             <div class="hero">
                 <div class="page-content">
                     <div id="nav-container">
-                        <header class="flex--row w-100">
+                        <header>
                             <div id="nav-logo"><a href="/"><img src="/assets/sheets-logo-white.png" alt="SFR logo"></a></div>
-                            <div class="flex--row nav-items w-100 justify-center">
-                                <a href="#">Contact</a>
-                                <a href="#">Sheets</a>
-                                <a href="#">About</a>
-                            </div>
                         </header>
                     </div> <!-- Navbar -->
                     <div class="section back-SFR p-t-50">
-                        <div class="row flex--row w-90 p-t-80">
-                            <div class="w-80 m-t-50 flex--column justify-end">
-                                <div><img class="sheet-home" src="/assets/sheet-illustration.png" alt="Sheets asset"></div>
+                        <div class="row flex--row w-90 p-t-80 header-container">
+                            <div class="w-80 flex--column space-between">
+                                <div><img class="sheet-home mob-display" src="/assets/sheet-illustration.png" alt="Sheets asset"></div>
+                                <div class="characters-div">
+                                    <a href="#bull"><div><img src="/assets/bull.png" alt="Recruiter"></div></a>
+                                    <a href="#red"><div><img src="/assets/red.png" alt="Recruiter"></div></a>
+                                    <a href="#kurt"><div><img src="/assets/kurt.png" alt="Recruiter"></div></a>
+                                    <a href="#nino"><div><img src="/assets/nino.png" alt="Recruiter"></div></a>
+                                </div>
                             </div>
                             <div class="flex--column color--white column-right">
                                 <h1 class="uppercase">Sheets for recruiters</h1>
-                                <p class="m-t-10">Powered by <span><a target="_blank" href="https://www.starred.com"><img class="powered-logo" src="/assets/starred-white-full.png" alt="Starred logo"></a></span></p>
+                                <div class="m-t-10 f22 powered-by">
+                                    <p>Powered by</p>
+                                    <a target="_blank" href="https://www.starred.com">
+                                        <img class="powered-logo" src="/assets/starred-white-full.png" alt="Starred logo">
+                                    </a>
+                                </div>
                                 <p class="m-t-30">At Starred, we're committed to unburdening recruiters with respective daily tasks so you can focus on what really matters, your Candidate Experience. So we are creating a collection of Google Sheets to make your life easier. Stay tuned.</p>
-                                <div class="m-t-60">
+                                <div class="m-t-60 p-b-50">
                                     <p class="bold f22">BE THE FIRST TO KNOW</p>
                                     <p>Sign up and get notified when we’re up and running.</p>
                                     <div class="m-t-20">
@@ -55,14 +61,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row p-t-40">
-                            <div class="flex--row justify-center characters-div">
-                                <a href="#bull"><div><img src="/assets/bull.png" alt="Recruiter"></div></a>
-                                <a href="#red"><div><img src="/assets/red.png" alt="Recruiter"></div></a>
-                                <a href="#kurt"><div><img src="/assets/kurt.png" alt="Recruiter"></div></a>
-                                <a href="#nino"><div><img src="/assets/nino.png" alt="Recruiter"></div></a>
-                            </div>
-                        </div>
                     </div>
                     <div class="section p-t-80">
                         <div class="row">
@@ -70,35 +68,53 @@
                             <p class="w-50">No two recruiters are the same, and don't we know it! We get you, and regardless of whether you're obsessed by the freshest hacks, an event-maniac, or unfamiliar with digital communication and eager to learn, we will offer you all the resources you need.</p>
                         </div>
                     </div>
-                    <div class="section back-SFR characters-back"></div> <!-- Background -->
+                    <div class="section back-SFR characters-back mob-display"></div> <!-- Background -->
                     <div class="section characters-section">
-                        <div id="bull" class="row flex--row characters-intro justify-center flex-center">
+                        <div id="bull" class="row characters-intro justify-center flex-center">
                             <div><img src="/assets/bull.png" alt="Bill"></div>
                             <div class="back-grey border-round shadow desc m-l-40">
                                 <h4 class="uppercase">bull</h4>
                                 <p>Hey, you. Your face looks familiar. Mark, is it? No? Sorry, I must've confused you with someone from last week's conference. You know how it is, I travel all the time, but I love it. This event is a bomb. I'm sure I'll get all the contacts I need to make my boss happy. Will you be at the next one? Great. See you there!</p>
                             </div>
                         </div>
-                        <div id="red" class="row flex--row characters-intro m-t-80 justify-center flex-center">
+                        <div id="red" class="row characters-intro m-t-80 justify-center flex-center">
                             <div class="back-grey border-round shadow desc m-r-40">
                                 <h4 class="uppercase">red</h4>
                                 <p>Oh, hi! Hi! I'm Red, nice to meet you, sir. I'm sorry for being a little late, I'm coming from a meeting with a hiring manager. Phew, I am always on the run. Everyone is doing conference calls, but I believe the best way to approach someone is in person! You know, you get to see their eyes... the windows to their soul. I'm sure you agree, don't you? But I digress. It's a pleasure to meet you! </p>
                             </div>
-                            <div><img src="/assets/red.png" alt="Red"></div>
+                            <div><img class="home-red" src="/assets/red.png" alt="Red"></div>
                         </div>
-                        <div id="kurt" class="row flex--row characters-intro m-t-80 justify-center flex-center">
-                            <div><img src="/assets/kurt.png" alt="Kurt"></div>
+                        <div id="kurt" class="row characters-intro m-t-80 justify-center flex-center">
+                            <div><img class="home-kurt" src="/assets/kurt.png" alt="Kurt"></div>
                             <div class="back-grey border-round shadow desc m-l-40">
                                 <h4 class="uppercase">kurt</h4>
                                 <p>Why hello, young Sir. My name is Kurt. Candidates sure have changed over the years. Oh my! Despite my decades of experience and my undoubtable skills, my closing rates are not what they used to be. I wonder...Now they all use those science-fiction stuff to talk to each other. They are always "in the web". But what about a good old landline phone call? Wait, what do you mean "what is a landline"?! </p>
                             </div>
                         </div>
-                        <div id="nino" class="row flex--row characters-intro m-t-80 justify-center flex-center">
+                        <div id="nino" class="row characters-intro m-t-80 justify-center flex-center">
                             <div class="back-grey border-round shadow desc m-r-40">
                                 <h4 class="uppercase">nino</h4>
                                 <p>Hey there! I'm Nino. Digital is EVERYTHING nowadays. I'm specialized in social media, job posting SEO and all things techy related to my job! My favorite word is "hack". I spend my days looking for cooler ways to do things - I am obsessed with apps and Chrome extensions! </p>
                             </div>
-                            <div><img src="/assets/nino.png" alt="Nino"></div>
+                            <div><img class="home-nino" src="/assets/nino.png" alt="Nino"></div>
+                        </div>
+                    </div>
+                    <div class="section section-footer m-t-100 p-tb-80">
+                        <div class="row flex--row row-footer">
+                            <div class="w-100 footer-video">
+                                <div class="circles">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <script src="https://fast.wistia.com/embed/medias/ysh3zeeea2.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ysh3zeeea2 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/ysh3zeeea2/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+                            </div>
+                            <div class="color--white p-l-80 w-80">
+                                <div class="footer-logo"><img src="/assets/starred-white-full.png" alt="Starred"></div>
+                                <h3 class="m-t-10">Take Control of your Candidate Experience</h3>
+                                <p class="f19">Our feedback solution empowers Talent Acquisition teams to effortlessly gather feedback and get the actionable insights you need to drive change.</p>
+                                <a class="btn btn--green" href="https://www.starred.com" target="_blank">Visit Starred.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>    
