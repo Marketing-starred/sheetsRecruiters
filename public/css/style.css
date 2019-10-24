@@ -7,7 +7,7 @@ html {
 body{
     font-family: Open Sans, sans-serif;
     margin:0px;
-    scroll-padding: 50px 0 0 0;
+    scroll-padding: 90px 0 0 0;
     
 }
 
@@ -738,10 +738,6 @@ p{
     .mob-display{
         display: none;
     }
-    header {
-        justify-content: center !important;
-        margin-left: 0px !important;
-    }
 
     /* Others */
     .input{
@@ -868,15 +864,37 @@ p{
     width: 100%;
     padding: 30px 0px;
 }
+#nav-container-mob {
+    position: absolute;
+    width: 100%;
+    background: #3528ff;
+    border-bottom: 1px solid white;
+    padding: 10px 0px;
+    opacity: 0;
+    top:-72px;
+    transition: top 0.3s ease-out;
+    z-index: 2
+}
+
+.show-nav-mob{
+    top: 0px !important;
+    opacity: 1 !important;
+    position: fixed !important;
+}
 
 header{
     display: flex;
-    justify-content: end;
-    margin-left: 40px;
+    justify-content: space-between;
+    padding:0px 50px;
+    align-items: center;
 }
 
 #nav-logo img{
-    width:90px;
+    width:80px;
+}
+
+#nav-logo-mob img{
+    width: 40px;
 }
 
 .nav-items a{
@@ -1116,7 +1134,7 @@ header{
     min-width: 250px;
     height: 310px;
     position: sticky;
-    top: 50px;
+    top: 100px;
 }
 
 .card{

@@ -1,6 +1,18 @@
-// Category selector
 
+// Category selectors
 $(document).ready(function() {
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            $('#nav-container').css('display', 'none');
+            $('#nav-container-mob').addClass('show-nav-mob');
+        }
+        else {
+            $('#nav-container-mob').removeClass('show-nav-mob');
+            $('#nav-container').css('display', 'block');
+        }
+    });
+
     $('#all').on('click', function(){
         highlight($('#all'))
         setTimeout(function(){
@@ -42,6 +54,7 @@ $(document).ready(function() {
     e.addClass('highlight')
     hide($('#1, #2, #3, #4, #5, #6'))
  }
+
 
 
 
