@@ -1107,10 +1107,14 @@ header{
 
 }
 
+.categories-container-mob{
+    display: none;
+}
+
 .categories-container{
     border-right: 1px solid #eaeaea;
     min-width: 250px;
-    max-height: 310px;
+    height: 310px;
     position: sticky;
     top: 50px;
 }
@@ -1173,4 +1177,38 @@ header{
 @keyframes Bounce {
     0%   {top: 20px;}
     100% {top: 0px;}
+}
+
+@media(max-width:900px){
+    .categories-container{
+        display:none;
+    }
+    .categories-container-mob{
+        display: flex;
+    }
+    .sheets-container{
+        padding: 0px !important;
+    }
+    .card h5, .card p{
+        text-align: left !important;
+        align-self: start !important;
+    }
+    .card div {
+        align-self: start !important;
+    }
+    .categories-container-mob, .categories-mob{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .categories-container-mob{
+        top: 0px;
+        position: sticky;
+    }
+}
+
+@media(max-width:515px){
+    .card div >img, .categories-container-mob{
+        display: none;
+    }
 }
