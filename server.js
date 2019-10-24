@@ -15,9 +15,6 @@ const optionsHttps = {
         plain: false
     }
 }
-
-
-
 const app = express(); 
 
 const PORT_http = 80; /* 80 */
@@ -53,6 +50,9 @@ app.use('/assets', express.static(__dirname + '/public/assets', { maxAge: 315576
 
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/public/index.html'));
+});
+app.get('/sheets',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/sheets.html'));
 });
 
 

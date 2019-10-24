@@ -1,15 +1,49 @@
-// Global variables
+// Category selector
 
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-const docEventListener = document.addEventListener.bind(document);
-const on = addEventListener;
+$(document).ready(function() {
+    $('#all').on('click', function(){
+        highlight($('#all'))
+        setTimeout(function(){
+            show($('#1, #2, #3, #4, #5, #6'))
+        }, 50)
+    })
+    $('#content').on('click', function(){
+        highlight($('#content'))
+        setTimeout(function(){
+            show($('#1, #2, #3'))
+        }, 50)
+    })
+    $('#tooling').on('click', function(){
+        highlight($('#tooling'))
+        setTimeout(function(){
+            show($('#4, #5'))
+        }, 50)
+    })
+    $('#metrics').on('click', function(){
+        highlight($('#metrics'))
+        setTimeout(function(){
+            show($('#6'))
+        }, 50)
+    })
+ });
 
-document.addEventListener('scroll', function (event) {
-  if(window.pageYOffset>300){
-    $('.preview-sheets').classList.add("show-preview");
-  }
-}, false); 
+ const hide = (e) => {
+    e.removeClass('show')
+    e.addClass('hide')
+ }
+
+ const show = (e) => {
+    e.removeClass('hide')
+    e.addClass('show')
+ }
+
+ const highlight = (e) => {
+    $('.categories').removeClass('highlight')
+    e.addClass('highlight')
+    hide($('#1, #2, #3, #4, #5, #6'))
+ }
+
+
 
 
 
