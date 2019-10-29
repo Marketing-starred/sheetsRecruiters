@@ -1063,10 +1063,10 @@ header{
 }
 
 .row-footer{
-    padding: 65px 60px;
+    padding: 70px 60px;
     border-radius: 28px;
     box-shadow: 0 -2px 12px 0 rgb(1,1,1,0.2);
-    max-width: 900px;
+    max-width: 1200px;
     background: black;
     margin-top: 150px;
 }
