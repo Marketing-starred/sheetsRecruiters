@@ -67,7 +67,6 @@ p{
     line-height:28px;
 }
 
-
 /* Width */
 
 .w-100{
@@ -91,6 +90,10 @@ p{
 
 .w-100px{
     width:100px;
+}
+
+.mw-430px{
+    max-width: 430px !important;
 }
 
 /* Paddings */
@@ -588,6 +591,11 @@ p{
     clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
     z-index: -1;
     position: relative;
+}
+
+.z-index-1{
+    z-index: 1 !important;
+    position:relative;
 }
 
 .shadow{
@@ -1190,6 +1198,10 @@ header{
 
 .hide{
     display: none;
+}
+
+.sheet-video{
+    width:80%;
 }
 
 @keyframes Bounce {

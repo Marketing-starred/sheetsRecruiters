@@ -54,6 +54,9 @@ app.get('/',function(req,res){
 app.get('/sheets',function(req,res){
     res.sendFile(path.join(__dirname+'/public/sheets.html'));
 });
+app.get('/sheets/archive-of-all-newsletter-materials',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/archive-newsletter.html'));
+});
 
 
 //Start Server
