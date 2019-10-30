@@ -17,9 +17,10 @@ p, a {
     margin: 0px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height:28px;
 }
 
 h1{
@@ -61,11 +62,25 @@ h5{
     margin-bottom:20px;
 }
 
-p{
-    font-weight: 500;
-    font-size: 18px;
-    line-height:28px;
+a{
+    text-decoration: none;
+    color: black;
 }
+
+li {
+    font-size: 18px;
+}
+
+::-moz-selection { 
+    color: white;
+    background: #252525;
+}
+  
+::selection {
+    color: white;
+    background: #252525;
+}
+
 
 /* Width */
 
@@ -465,11 +480,6 @@ p{
     text-decoration: underline;
 }
 
-.underline--green{
-    padding-bottom: 2px;
-    border-bottom: 2px solid #29d1bb;
-}
-
 .no-display{
     display:none !important;
 }
@@ -527,7 +537,7 @@ p{
 }
 
 .center-align{
-    text-align: center;
+    text-align: center !important;
 }
 
 .left-align{
@@ -565,27 +575,6 @@ p{
     width:65%;
 }
 
-.bullet:before{
-    content: '';
-    width: 7px;
-    height: 7px;
-    background: #29d1bb;
-    border-radius: 30px;
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 3px;
-}
-
-.bullet-orange:before{
-    content: '';
-    width: 7px;
-    height: 7px;
-    background: #fe7711;
-    border-radius: 30px;
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 3px;
-}
 .clip{
     -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
     clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
@@ -629,23 +618,6 @@ p{
     border-left: 1px solid #eaeaea;
 }
 
-.bckg-top-left{
-    width: 280px;
-    height: 85px;
-    padding-top: 30px;
-    border-bottom-right-radius: 40px;
-}
-.bckg-bottom-right{
-    width: 280px;
-    height: 15px;
-    padding-top: 30px;
-    border-top-left-radius: 40px;
-    float: right;
-    margin-top: -45px;
-    z-index: -1;
-    position: relative;
-}
-
 /* Buttons */
 
 .btn{
@@ -687,7 +659,7 @@ p{
 
 .btn--green{
     color: #ffffff!important;
-    border: 2px solid #27d4be;
+    border: 1px solid #27d4be;
     background-color:#27d4be;
 }
 
@@ -1222,6 +1194,11 @@ header{
     width:450px;
 }
 
+.img-recommended{
+    height: 170px;
+    display: flex;
+}
+
 @keyframes Bounce {
     0%   {top: 20px;}
     100% {top: 0px;}
@@ -1259,4 +1236,20 @@ header{
     .card div >img, .categories-container-mob{
         display: none;
     }
+}
+
+.footer-video-2{
+    margin: 0 auto;
+    width: 100%;
+    max-width:800px;
+    overflow: hidden;
+    border-radius:20px;
+    margin-top:40px !important;
+}
+
+.footer-img-try{
+    position: absolute;
+    width: 158px;
+    margin-top: -569px;
+    margin-left: 1077px;
 }

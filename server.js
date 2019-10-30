@@ -57,6 +57,22 @@ app.get('/sheets',function(req,res){
 app.get('/sheets/archive-of-all-newsletter-materials',function(req,res){
     res.sendFile(path.join(__dirname+'/public/archive-newsletter.html'));
 });
+app.get('/sheets/digital-communities-for-recruiters',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/communities-for-recruiters.html'));
+});
+app.get('/sheets/top-notch-content-to-follow',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/top-notch-content.html'));
+});
+app.get('/sheets/useful-chrome-extensions-for-recruiters',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/chrome-extensions.html'));
+});
+app.get('/sheets/best-mobile-apps-for-recruiters',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/mobile-apps.html'));
+});
+app.get('/sheets/metrics-calculator-for-recruiters',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/metrics.html'));
+});
+
 
 
 //Start Server
