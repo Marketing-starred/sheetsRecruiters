@@ -1,6 +1,7 @@
 const express = require("express");
 const http = require("http");
 const path = require("path");
+const compression = require('compression')
 const fs = require('fs');
 const spdy = require('spdy');
 const key = fs.readFileSync('./ssl/private.key');
