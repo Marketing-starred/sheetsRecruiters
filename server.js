@@ -22,6 +22,11 @@ const PORT_https = 443; /* 443 */
 const server_http = http.createServer(app);
 const server_https = spdy.createServer(optionsHttps,app);
 
+//Gzip compression
+
+app.use(compression());
+
+
 //Redirections
 
 function redirect(req, res, next) {
