@@ -1228,6 +1228,7 @@ header{
     }
     .sheets-container{
         padding: 0px !important;
+        width: 100%;
     }
     .card h5, .card p{
         text-align: left !important;
@@ -1235,6 +1236,9 @@ header{
     }
     .card div {
         align-self: start !important;
+    }
+    .card div img {
+        display: none;
     }
     .categories-container-mob, .categories-mob{
         display: flex;
