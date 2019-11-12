@@ -73,6 +73,10 @@ app.get('/sheets/metrics-calculator-for-recruiters',function(req,res){
     res.sendFile(path.join(__dirname+'/public/metrics.html'));
 });
 
+app.get('/pricing',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/pricing-starred.html'));
+});
+
 
 
 //Start Server

@@ -1,0 +1,644 @@
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<div class="section">
+    <div class="row">
+        <h1 class="center-align super-bold">Easy pricing with Starred</h1>
+    </div>
+</div>
+<div class="section selectors-section">
+    <div class="row flex--row">
+        <div id="cx" class="main-selectors">Candidate Experience</div>
+        <div id="ee" class="main-selectors">Employee Engagement</div>
+        <div id="cf" class="main-selectors">Customer Feedback</div>
+    </div>
+</div>
+<div class="section">
+    <div class="row flex--column price-build">
+        <div class="step-1">
+            <div class="step-cande">Step 1</div>
+            <h4>Choose your type of organization</h4>
+            <div class="flex--row justify-between m-tp-10">
+                <div id="agency" class="center-align selector selected">
+                    <h4>Agency Recruiters</h4>
+                    <p>Your organization helps matching employees to employers</p>
+                </div>
+                <div id="inhouse" class="center-align selector">
+                    <h4>Inhouse Recruiters</h4>
+                    <p>Your organization uses internal recruiters</p>
+                </div>
+            </div>
+            <div class="flex--row justify-start">
+                <div>
+                    <p class="bold f20">Recruiters</p>
+                    <p>How many recruiters work in your organization?</p>
+                </div>
+                <div class="slider-div flex--column">
+                    <input type="range" min="11" max="20" value="1" class="slider" id="myRange">
+                    <p>Recruiters: </p>
+                </div>
+            </div>
+        </div>
+        <div class="step-2 m-t-20">
+            <div class="step-cande">Step 2</div>
+            <h4>Choose your plan</h4>
+            <div class="flex--row plans justify-between m-tp-10">
+                <div id="cx-basic" class="selector center-align pack">
+                    <h4>Basic</h4>
+                    <p>Starting at</p>
+                    <h3>$799 /mo</h3>
+                </div>
+                <div id="cx-premium" class="selector center-align selected pack">
+                    <h4>Premium</h4>
+                    <p>Starting at</p>
+                    <h3>$799 /mo</h3>
+                </div>
+                <div id="cx-business" class="selector center-align pack">
+                    <h4>Business</h4>
+                    <p>Starting at</p>
+                    <h3>$799 /mo</h3>
+                </div>
+                <div class="selector center-align">
+                    <h4>Enterprise</h4>
+                    <p>Get a quote</p>
+                    <a>Contact us</a>
+                </div>
+            </div>
+            <p id="pack-title" class="f21 bold m-t-20">Premium Pack</p>
+            <p id="pack-desc">For more sophisticate teams. A complete candidate experience package to help connect with candidates, exceed their expectations, automate processes and custom reports.</p>
+            <p class="f20 bold m-t-20">Features</p>
+            <div class="flex--row start-align">
+                <div class="flex--column">
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f1" class="check">✓</span>
+                        <p class="m-t-0">Responsive & auto-optimized feedback solution across all devices.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f2" class="check">✓</span>
+                        <p class="m-t-0">Personalized messages to candidates with automatic custom fields.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f3" class="check">✓</span>
+                        <p class="m-t-0">Respondent experience optimized for high response rated.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f4" class="check">✓</span>
+                        <p class="m-t-0">Personalized look and feel.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f5" class="check">✓</span>
+                        <p class="m-t-0">Access to Starred Connect.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f6" class="check">✓</span>
+                        <p class="m-t-0">Automatic workflows.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f7" class="check">✓</span>
+                        <p class="m-t-0">Priority Matrix.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f8" class="check">✓</span>
+                        <p class="m-t-0">Template gallery.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f9" class="check">✓</span>
+                        <p class="m-t-0">Advanced data dashboards.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f10" class="check">✓</span>
+                        <p class="m-t-0">Exportable reports.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f11" class="check">✓</span>
+                        <p class="m-t-0">Advanced thank you pages.</p>
+                    </div>
+                </div>
+                <div class="flex--column">
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f12" class="check">✓</span>
+                        <p class="m-t-0">Custom cooldown period.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f13" class="check">✓</span>
+                        <p class="m-t-0">Benchmark reporting.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f14" class="check">✓</span>
+                        <p class="m-t-0">Custom dashboards.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f15" class="check">✓</span>
+                        <p class="m-t-0">Access to quality check.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f16" class="check">✓</span>
+                        <p class="m-t-0">Premium invitations.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f17" class="check">✓</span>
+                        <p class="m-t-0">Industry benchmark in Template Gallery.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f18" class="check">✓</span>
+                        <p class="m-t-0">Infinite number of feedback forms.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f19" class="check">✓</span>
+                        <p class="m-t-0">Personalized integration setup.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f20" class="check">✓</span>
+                        <p class="m-t-0">Premium onboarding.</p>
+                    </div>
+                    <div class="flex--row justify-left start-align m-t-10">
+                        <span id="f20" class="check">✓</span>
+                        <p class="m-t-0">Premium support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upgrades-section">
+            <div class="flex--row start-align">
+                <div class="toggle-upgrade"></div>
+                <div>
+                    <h4>Upgrades</h4>
+                    <p>Some marketing description like, we offer a lot of possivpe upgrades that allow to adjust your plan exactly.</p>
+                </div>
+            </div>
+            <div class="m-t-20 flex--row justify-between wrap">
+                <div class="flex--column containers">
+                    <div>
+                        <span><img src="" alt=""></span>
+                        <p class="bold m-t-0">Labels</p>
+                    </div>
+                    <p class="m-b-30 f16">Choose the amount of custom labels you want to ue. with more labels you will get more detailed result.</p>
+                    <div class="slider-div flex--column center-align">
+                        <input type="range" min="0" max="9" value="0" class="slider" id="myRange">
+                        <p>0 labels</p>
+                        <p class="bold m-b-0">300</p>
+                    </div>
+                </div>
+                <div class="flex--column containers">
+                    <div>
+                        <span><img src="" alt=""></span>
+                        <p class="bold m-t-0">Groups</p>
+                    </div>
+                    <p class="m-b-30 f16">Groups allow you to further analyse the rating of certain customers or businesses.</p>
+                    <div class="slider-div flex--column center-align">
+                        <input type="range" min="0" max="2" value="0" class="slider" id="myRange">
+                        <p>0 groups</p>
+                        <p class="bold m-b-0">300</p>
+                    </div>
+                </div>
+                <div class="flex--column containers m-t-20">
+                    <div>
+                        <span><img src="" alt=""></span>
+                        <p class="bold m-t-0">Languages</p>
+                    </div>
+                    <p class="m-b-30 f16">Choose in how many languages you want to send your feedback forms.</p>
+                    <div class="slider-div flex--column center-align">
+                        <input type="range" min="1" max="9" value="1" class="slider" id="myRange">
+                        <p>1 Languages</p>
+                        <p class="bold m-b-0">300</p>
+                    </div>
+                </div>
+                <div class="flex--column containers m-t-20">
+                    <div>
+                        <span><img src="" alt=""></span>
+                        <p class="bold m-t-0">Integration workflows</p>
+                    </div>
+                    <p class="m-b-30 f16">Choose more workflow if you want to automate your process and connect to external services.</p>
+                    <div class="slider-div flex--column center-align">
+                        <input type="range" min="0" max="60" value="0" class="slider" id="myRange">
+                        <p>0 workflows</p>
+                        <p class="bold m-b-0">300</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="support-section m-t-20">
+            <div class="flex--row start-align">
+                <div class="toggle-upgrade"></div>
+                <div>
+                    <h4>Extra support</h4>
+                    <p>We offer some additional support to bootstrap your experience with Starred</p>
+                </div>
+            </div>
+            <div class="m-t-20 flex--row justify-between wrap">
+                <div id="onboarding" class="flex--column selector">
+                    <p class="bold m-t-0">Premium Onboarding</p>
+                    <p class="f16">Onsite onboarding at your office made by our support team.</p>
+                    <p class="m-b-0">995$</p>
+                </div>
+                <div id="support" class="flex--column selector">
+                    <p class="bold m-t-0">Premium Support</p>
+                    <p class="f16">Onsite onboarding at your office made by our support team.</p>
+                    <p class="m-b-0">995$</p>
+                </div>
+                <div id="success" class="flex--column selector m-t-20">
+                    <p class="bold m-t-0">Success Plan</p>
+                    <p class="f16">Onsite onboarding at your office made by our support team.</p>
+                    <p class="m-b-0">995$</p>
+                </div>
+                <div id="course" class="flex--column selector m-t-20">
+                    <p class="bold m-t-0">Super Starred Course</p>
+                    <p class="f16">Onsite onboarding at your office made by our support team.</p>
+                    <p class="m-b-0">995$</p>
+                </div>
+            </div>
+        </div>
+        <div class="step-2 m-t-40 border-top p-t-40">
+            <div class="step-cande">Summary</div>
+            <h2>Price Breakdown</h2>
+            <div class="flex--row justify-between start-align">
+                <p class="bold">Monthly cost:</p>
+                <div class="flex--column">
+                    <p class="f21 bold m-b-0">900$ <span class="f17 black">/mo</span></p>
+                    <p class="m-t-0 f15 grey">Billed annually</p>
+                </div>
+            </div>
+            <div class="flex--row justify-between start-align border-top">
+                <p class="bold">Plan subtotal:</p>
+                <div class="flex--column">
+                    <p class="f21 bold m-b-0">900$</p>
+                    <p class="m-t-0 f15 grey">Monthly x 12</p>
+                </div>
+            </div>
+            <div class="flex--row justify-between start-align border-top">
+                <h4 class="bold">Estimated cost:</h4>
+                <div class="flex--column">
+                    <p class="f21 bold m-b-0">900$</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+<style>
+
+p, h1, h2, h3, h4{
+    font-family: 'open sans' !important;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 17px;
+    line-height: 27px;
+}
+
+div{
+    font-family: 'open sans' !important;
+}
+
+h1{
+    font-size: 55px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+.super-bold{
+    font-weight:900;
+}
+
+.bold{
+    font-weight:700;
+}
+
+.f15{
+    font-size: 15px;
+}
+
+.f16{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.f17{
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.f21{
+    font-size: 21px;
+}
+
+.f20{
+    font-size: 20px;
+}
+
+.section{
+    padding: 80px 0px;
+
+}
+
+.orange{
+    color:#fe7711;
+}
+
+.black{
+    color: black;
+}
+
+.grey{
+    color: #b7c1c6;
+}
+
+.m-t-0{
+    margin-top: 0px !important;
+}
+
+.m-b-0{
+    margin-bottom: 0px !important;
+}
+
+.m-t-20{
+    margin-top: 20px;
+}
+
+.m-t-40{
+    margin-top: 40px;
+}
+
+.m-tp-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.m-t-10{
+    margin-top: 10px;
+}
+
+.m-b-30{
+    margin-bottom: 30px;
+}
+
+.p-t-40{
+    padding-top:40px;
+}
+
+.border-top{
+    border-top: 1px solid black
+}
+
+.border-top-orange{
+    border-top: 1px solid #fe7711;
+}
+
+.selectors-section{
+    border-bottom: 8px solid #fe7711;
+    padding-bottom: 0px !important;
+}
+
+.main-selectors{
+    padding:20px 20px 20px 20px;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.flex--row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-start{
+    justify-content: flex-start !important;
+}
+
+.justify-between{
+    justify-content: space-between !important;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.start-align{
+    align-items: flex-start !important;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.justify-left{
+    justify-content:flex-start
+}
+
+#cx{
+    background: #fe7711;
+}
+
+#ee{
+    background: #27d9bc;
+}
+
+#cf{
+    background: #1d50ff;
+}
+
+.price-build{
+    width:100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.step-cande{
+    padding: 5px 15px;
+    background: #fe7711;
+    display: inline-block;
+    border-radius: 30px;
+    color: white;
+}
+
+.selector{
+    background: #f7f9ff;
+    border-radius: 10px;
+    padding: 20px 16px;
+    max-width: 308px;
+    cursor: pointer;
+    color: #7a8292;
+    text-align: center;
+    border: 2px solid #f7f9ff;
+}
+
+.selected{
+    color: black !important;
+    background: white !important;
+    border: 2px solid #fe7711 !important;
+}
+
+.selector h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+
+.slider-div{
+    width: 100%;
+    max-width: 390px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background:#7b8293;
+    outline: none;
+    border-radius: 20px;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #fe7711;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #fe7711;
+  cursor: pointer;
+}
+
+.plans div{
+    height: 101px;
+    width: 137px;
+}
+
+.plans div h4{
+    margin-top: 0px !important;
+}
+
+.check{
+    background: #ced2de;
+    border-radius: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px 6px;
+    color: #ced2de;
+    margin-top: 5px;
+}
+
+
+.support-section, .upgrades-section{
+    margin-top: 58px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.toggle-upgrade{
+    padding: 10px;
+    border: 1px solid #fe7711;
+    border-radius: 30px;
+    margin-right: 19px;
+    margin-top:17px;
+}
+
+.containers{
+    width: 289px;
+    border: 1px solid #fe7711;
+    border-radius: 13px;
+    padding: 23px;
+    height: 243px;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+</style>
+
+<script>
+
+const cx = $('#cx')
+const ee = $('#ee')
+const cf = $('#cf')
+const inhouse = $('#inhouse')
+const agency = $('#agency')
+const cx_basic = $('#cx-basic')
+const cx_premium = $('#cx-premium')
+const cx_business = $('#cx-business')
+const pack = $('.pack')
+const onboarding = $('#onboarding')
+const support = $('#support')
+const success = $('#success')
+const course = $('#course')
+const pack_title = $('#pack-title')
+const pack_desc = $('#pack-desc')
+
+
+agency.on('click', () => {
+    inhouse.removeClass('selected')
+    agency.addClass('selected')
+})
+
+inhouse.on('click', () => {
+    agency.removeClass('selected')
+    inhouse.addClass('selected')
+})
+
+cx_basic.on('click', () => {
+    pack.removeClass('selected')
+    cx_basic.addClass('selected')
+    pack_title.html('Basic Pack')
+    pack_desc.html('For recruitment teams. Tool to help connect with candidates, understand their expectation, and automate processes')
+})
+
+cx_premium.on('click', () => {
+    pack.removeClass('selected')
+    cx_premium.addClass('selected')
+    pack_title.html('Prmeium Pack')
+    pack_desc.html('For advanced teams. Tool to help connect with candidates, exceed the expectations, and automate processes')
+})
+
+cx_business.on('click', () => {
+    pack.removeClass('selected')
+    cx_business.addClass('selected')
+    pack_title.html('Business Pack')
+    pack_desc.html('For more sophisticated teams. A complete candidate experience package to help connect with candidates, exceed their expectations, automate processes and custom reports')
+})
+
+onboarding.on('click', () => {
+    onboarding.hasClass('selected') ? 
+    onboarding.removeClass('selected') :
+    onboarding.addClass('selected')
+})
+
+support.on('click', () => {
+    support.hasClass('selected') ? 
+    support.removeClass('selected') :
+    support.addClass('selected')
+})
+
+success.on('click', () => {
+    success.hasClass('selected') ? 
+    success.removeClass('selected') :
+    success.addClass('selected')
+})
+
+course.on('click', () => {
+    course.hasClass('selected') ? 
+    course.removeClass('selected') :
+    course.addClass('selected')
+})
+
+</script>

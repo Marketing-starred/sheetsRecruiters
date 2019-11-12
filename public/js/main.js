@@ -32,7 +32,7 @@ $(document).ready(function() {
     </div>\
     <div class="color--white p-l-80 w-80">\
         <div class="footer-logo"><img src="/assets/starred-white-full.png" alt="Starred"></div>\
-        <h3 class="m-t-10">Take Control of your Candidate Experience</h3>\
+        <h2 class="m-t-10">Take Control of your Candidate Experience</h2>\
         <p class="f19">Our feedback solution empowers Talent Acquisition teams to effortlessly gather feedback and get the actionable insights you need to drive change.</p>\
         <a class="btn btn--green" href="https://www.starred.com" target="_blank">Visit Starred.com</a>\
     </div>\
