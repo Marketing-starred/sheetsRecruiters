@@ -819,7 +819,7 @@ li {
     }
 
     header {
-        padding: 0 15px;
+        padding: 0 20px !important;
     }
 }
 
@@ -881,7 +881,7 @@ header{
 }
 
 #nav-logo-mob img{
-    width: 40px;
+    width: 35px;
 }
 
 .nav-items a{
@@ -1134,7 +1134,7 @@ header{
 
 .card-recommended{
     max-width: 400px;
-    width:100%;
+    width:90%;
     margin: 20px 10px;
 }
 
@@ -1245,7 +1245,7 @@ header{
         text-align: center;
     }
     .sheet-video{
-        width:95%;
+        width:100%;
     }
     .column-right {
         width: 90%;
@@ -1259,10 +1259,9 @@ header{
         padding-top:50px;
     }
     .whats-inside ul {
-        width: auto;
-        padding-left: 0px;
-        display: flex;
-        flex-direction: column;
+        max-width: 235px;
+        width: 100%;
+        padding-left: 65px;
         align-items: center;
         margin-top: 33px;
     }
