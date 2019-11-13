@@ -1027,12 +1027,12 @@ header{
     z-index: -1;
     position: relative;
     margin-top: 88px !important;
-    margin-bottom: 285px;
+    margin-bottom: 280px;
 }
 
 .characters-section{
     position: absolute;
-    top: 1260px;
+    top: 1214px;
     width: 100%;
 }
 
