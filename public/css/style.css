@@ -825,6 +825,9 @@ li {
     .sheet-hero{
         width:95%;
     }
+    .bullets-container{
+        width: 100%;
+    }
 }
 
 
@@ -972,6 +975,10 @@ header{
 .hs-richtext p{
     font-size: 15px !important;
     line-height: 23px !important;
+}
+
+.legal-consent-container .hs-form-booleancheckbox-display p {
+    font-size: 15px;
 }
 
 .inputs-list {
@@ -1283,9 +1290,6 @@ header{
     }
     .whats-inside .asset div img {
         width:88%;
-    }
-    .legal-consent-container .hs-form-booleancheckbox-display p {
-        font-size: 15px;
     }
 }
 
