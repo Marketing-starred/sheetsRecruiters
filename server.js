@@ -16,7 +16,9 @@ const optionsHttps = {
         plain: false
     }
 }
-const app = express(); 
+const app = express();
+var serveIndex = require('serve-index');
+
 
 const PORT_http = 80; /* 80 */
 const PORT_https = 443; /* 443 */
@@ -47,6 +49,7 @@ app.use(redirect);
 
 //Serve static
 
+app.use('/.well-known', express.static('.well-known'), serveIndex('.well-known'));
 app.use('/css', express.static(__dirname + '/public/css', { maxAge: 2592000000 }));
 app.use('/js', express.static(__dirname + '/public/js', { maxAge: 2592000000 }));
 app.use('/assets', express.static(__dirname + '/public/assets', { maxAge: 31557600 })); 
