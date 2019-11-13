@@ -6,13 +6,12 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding: 90px 0 0 0 !important;
   }
 
 body{
-    font-family: Open Sans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin:0px;
-    scroll-padding: 90px 0 0 0;
-    
 }
 
 p, a {
@@ -1313,4 +1312,5 @@ header{
     border-top: 2px solid black;
     margin-top: 100px;
     clip-path: polygon(0 8%,100% 0%,100% 100%,0 100%);
+    -webkit-clip-path: polygon(0 8%,100% 0%,100% 100%,0 100%);
 }
