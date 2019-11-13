@@ -2,12 +2,13 @@
 
 *{
     outline: none;
-    -webkit-overflow-scrolling: touch;
 }
 
 html {
     scroll-behavior: smooth;
     scroll-padding: 90px 0 0 0 !important;
+    -webkit-scroll-behavior: smooth;
+    -webkit-scroll-padding: 90px 0 0 0 !important;
   }
 
 body{
