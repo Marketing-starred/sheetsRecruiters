@@ -4,6 +4,7 @@ const path = require("path");
 const compression = require('compression')
 const fs = require('fs');
 const spdy = require('spdy');
+var serveIndex = require('serve-index'); // For SSL certificate installation
 const key = fs.readFileSync('./ssl/private.key');
 const cert = fs.readFileSync('./ssl/certificate.crt');
 const ca = fs.readFileSync('./ssl/ca_bundle.crt');
@@ -17,8 +18,6 @@ const optionsHttps = {
     }
 }
 const app = express();
-var serveIndex = require('serve-index');
-
 
 const PORT_http = 80; /* 80 */
 const PORT_https = 443; /* 443 */
@@ -49,7 +48,7 @@ app.use(redirect);
 
 //Serve static
 
-app.use('/.well-known', express.static('.well-known'), serveIndex('.well-known'));
+app.use('/.well-known', express.static('.well-known'), serveIndex('.well-known')); // For SSL certificate installation
 app.use('/css', express.static(__dirname + '/public/css', { maxAge: 2592000000 }));
 app.use('/js', express.static(__dirname + '/public/js', { maxAge: 2592000000 }));
 app.use('/assets', express.static(__dirname + '/public/assets', { maxAge: 31557600 })); 
