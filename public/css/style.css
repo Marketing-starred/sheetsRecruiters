@@ -817,9 +817,11 @@ li {
         margin-left: -100px;
         margin-top: 178px;
     }
-
     header {
         padding: 0 20px !important;
+    }
+    .sheet-hero{
+        width:95%;
     }
 }
 
@@ -1259,9 +1261,9 @@ header{
         padding-top:50px;
     }
     .whats-inside ul {
-        max-width: 235px;
+        max-width: 300px;
         width: 100%;
-        padding-left: 65px;
+        padding-left: 38px;
         align-items: center;
         margin-top: 33px;
     }
