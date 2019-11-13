@@ -1190,11 +1190,14 @@ header{
 
 }
 
+.bullets-container{
+    width: 95%;
+}
+
 .whats-inside ul{
     -webkit-columns: 2;
     -moz-columns: 2;
     column-count: 2;
-    padding-left:19px;
 }
 
 .whats-inside ul li{
@@ -1261,11 +1264,9 @@ header{
         padding-top:50px;
     }
     .whats-inside ul {
-        max-width: 300px;
         width: 100%;
-        padding-left: 38px;
-        align-items: center;
         margin-top: 33px;
+        padding-left: auto !important;
     }
     ul li{
         text-align: left;
